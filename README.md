@@ -1,4 +1,4 @@
-# Face Forensics videos preprocessing with multiprocessing
+# Face Forensics Videos Preprocessing With Multiprocessing
 This repository contains an optimized code for preprocessing videos from the FaceForensics++ (F++) dataset. By leveraging multiprocessing, the code efficiently extracts target faces from videos using corresponding masked videos as guides.
 
 In the left image, there are two faces present within a video frame. However, by utilizing the masks provided by the FaceForensics++ dataset (as shown on the right), we can precisely extract the target face.
