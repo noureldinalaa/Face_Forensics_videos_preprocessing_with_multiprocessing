@@ -10,9 +10,9 @@ Please follow the steps provided in the [FaceForensics++ repository](https://git
 ## Instructions:
 Please install the required packages using the requirement file :
 
-	```
-            pip install -r requirements.txt
-	```
+```
+    pip install -r requirements.txt
+```
 
 To run the code:
 
@@ -21,9 +21,9 @@ To run the code:
 3. Finally, specify the output path where the results will be saved
 
 Example:
-'''
+```
     python .\main.py --input_folder "\archive\manipulated_sequences\NeuralTextures" --masked_input_folder "masks\manipulated_sequences\Deepfakes\masks\videos" --output_folder_base "\test"
 
-'''
+```
 
 **Please be aware that you may need to adjust the batch size based on your computer's resources. The current batch size is set to 12.**
