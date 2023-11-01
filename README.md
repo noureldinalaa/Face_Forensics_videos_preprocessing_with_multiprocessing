@@ -22,7 +22,7 @@ To run the code:
 
 Example:
 ```
-    python .\main.py --input_folder "\archive\manipulated_sequences\NeuralTextures" --masked_input_folder "masks\manipulated_sequences\Deepfakes\masks\videos" --output_folder_base "\test"
+    python .\main.py --input_folder "\archive\manipulated_sequences\NeuralTextures" --masked_input_folder "masks\manipulated_sequences\Deepfakes" --output_folder_base "\test"
 
 ```
 
