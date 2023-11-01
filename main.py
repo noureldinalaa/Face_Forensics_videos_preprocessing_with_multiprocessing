@@ -129,6 +129,9 @@ if __name__ == "__main__":
     masked_input_folder = args.masked_input_folder
     output_folder_base = args.output_folder_base
 
+    cpu_count = multiprocessing.cpu_count()
+    recommended_cpu_usage = cpu_count - 2
+
     # Lists to store paths.
     video_paths = []
     masked_video_paths = []
@@ -151,7 +154,7 @@ if __name__ == "__main__":
             input_tuples = list(zip(batch_video_paths, batch_masked_video_paths))
 
             # Process videos in parallel using multiprocessing.
-            with multiprocessing.Pool(processes=18) as pool:
+            with multiprocessing.Pool(processes= recommended_cpu_usage) as pool:
                 func = partial(process_video, output_folder_base=output_folder_base)
                 results = pool.map(func, input_tuples)
 
