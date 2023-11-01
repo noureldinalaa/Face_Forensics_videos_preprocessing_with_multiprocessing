@@ -7,12 +7,12 @@ In the left image, there are two faces present within a video frame. However, by
 
 Please follow the steps provided in the [FaceForensics++ repository](https://github.com/ondyari/FaceForensics/tree/master/dataset) to obtain the videos and their corresponding masks. Note that you should download only the manipulated deepfake masked videos. These masked videos can be used to detect the target face in all other videos.
 
+## Instructions:
 Please install the required packages using the requirement file :
 
-'''
-pip install -r requirements.txt
-
-'''
+	```
+            pip install -r requirements.txt
+	```
 
 To run the code:
 
@@ -22,7 +22,7 @@ To run the code:
 
 Example:
 '''
-python .\main.py --input_folder "\archive\manipulated_sequences\NeuralTextures" --masked_input_folder "masks\manipulated_sequences\Deepfakes\masks\videos" --output_folder_base "\test"
+    python .\main.py --input_folder "\archive\manipulated_sequences\NeuralTextures" --masked_input_folder "masks\manipulated_sequences\Deepfakes\masks\videos" --output_folder_base "\test"
 
 '''
 
